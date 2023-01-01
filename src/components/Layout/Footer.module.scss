@@ -1,0 +1,124 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/mediaQ.scss";
+
+.block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  align-items: center;
+  @include responsive__1024 {
+    flex-direction: row;
+  }
+  &__left {
+    padding: $margin-sides;
+    display: none;
+    @include responsive__1024 {
+      width: 35%;
+      display: block;
+    }
+    @include responsive__1440 {
+      align-items: center;
+      width: 25%;
+    }
+    &__logo {
+      width: 250px;
+      margin-top: 90px;
+    }
+    &__text {
+      @include font-second-light($color-grey);
+      font-size: $font-size-12;
+      margin-top: 30px;
+    }
+  }
+  &__right {
+    width: 100%;
+
+    @include responsive__1024 {
+      width: 65%;
+    }
+    @include responsive__1440 {
+      width: 75%;
+    }
+
+    &__top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: $margin-sides;
+      gap: 20px;
+      background-color: $color-light-grey;
+      @include responsive__768 {
+        flex-direction: row;
+        gap: 100px;
+      }
+      & img {
+        display: inline;
+        max-width: 50px;
+        padding: 20px 0;
+        margin-right: 10px;
+      }
+      &__element {
+        @include font-first-bold($color-grey);
+        font-size: $font-size-16;
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__bottom {
+      background-color: $color-grey;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      padding: $margin-sides;
+      text-align: center;
+      padding: 40px;
+      align-items: center;
+      @include font-second-light();
+      & h4 {
+        @include font-first-bold();
+        font-size: $font-size-24;
+        margin-bottom: 30px;
+      }
+      & h5 {
+        @include font-first-bold();
+        margin-bottom: 10px;
+      }
+      @include responsive__768 {
+        flex-direction: row;
+        gap: 60px;
+        text-align: left;
+        align-items: unset;
+      }
+      @include responsive__1440 {
+        height: 300px;
+        gap: 100px;
+        align-items: center;
+      }
+      &__left {
+        margin-top: 60px;
+        @include responsive__768 {
+          margin-top: 0px;
+        }
+      }
+      &__right {
+        display: flex;
+        flex-direction: column;
+        &__adress {
+          font-size: $font-size-16;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          gap: 30px;
+          @include font-second-light();
+          font-size: $font-size-16;
+          @include responsive__768 {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+}

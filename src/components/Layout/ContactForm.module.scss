@@ -1,0 +1,91 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/mediaQ.scss";
+
+.block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  @include responsive__768 {
+    margin-bottom: 300px;
+    flex-direction: row;
+  }
+  &__contactUs {
+    background-color: $color-grey;
+    height: 300px;
+    @include responsive__768 {
+      height: 500px;
+      width: 46%;
+    }
+    &__line {
+      border-bottom: 2px solid $color-white;
+      margin: 70px 0 0 70px;
+      width: 50px;
+    }
+    &__text {
+      @include font-first-light;
+      font-size: calc($font-size-48 - 0.5rem);
+      margin: 70px 0 0 70px;
+      @include responsive__1024 {
+        font-size: $font-size-48;
+        margin: 140px 0 0 70px;
+      }
+    }
+  }
+  &__form {
+    @include font-second-light($color-grey);
+    @include responsive__768 {
+      padding-right: 30px;
+      width: 65%;
+    }
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      @include responsive__768 {
+        align-items: flex-end;
+      }
+      @include responsive__1024 {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    &__text {
+      background-color: $color-light-grey;
+      width: 100%;
+      padding: 30px;
+      height: 300px;
+      @include responsive__768 {
+        height: 300px;
+      }
+      @include responsive__1024 {
+        height: 500px;
+      }
+    }
+    &__name {
+      background-color: $color-light-grey;
+      padding: 20px 30px;
+      width: 100%;
+      @include responsive__1024 {
+        width: 40%;
+      }
+    }
+    &__email {
+      background-color: $color-light-grey;
+      padding: 20px 30px;
+      width: 100%;
+      @include responsive__1024 {
+        margin: 20px 30px;
+        width: 40%;
+      }
+    }
+    &__message {
+      @include font-second-light;
+      background-color: $color-grey;
+      padding: 20px 30px;
+    }
+  }
+}

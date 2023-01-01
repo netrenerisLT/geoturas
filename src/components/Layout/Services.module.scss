@@ -1,0 +1,46 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/mediaQ.scss";
+.block {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.services {
+  background-color: $color-light-grey;
+  @include responsive__1024 {
+    width: 79%;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 60px;
+    margin: $margin-sides;
+    text-align: center;
+
+    @include responsive__768 {
+      padding-bottom: 400px;
+      text-align: left;
+    }
+    @include responsive__1024 {
+      padding-top: 150px;
+      text-align: left;
+    }
+    @include responsive__1440 {
+      padding-top: 200px;
+    }
+    &__item {
+      &__title {
+        @include font-second-bold($color: $color-black);
+        max-width: 350px;
+      }
+      &__text {
+        @include font-second-light($color: $color-black);
+        max-width: 350px;
+        margin-top: 30px;
+      }
+    }
+  }
+}

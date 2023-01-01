@@ -1,0 +1,69 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/mediaQ.scss";
+
+.block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    @include responsive__768 {
+      flex-direction: row;
+    }
+    &__image {
+      @include responsive__768 {
+        width: 54%;
+        margin-top: -200px;
+      }
+      & img {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+        @include responsive__768 {
+          height: 500px;
+        }
+      }
+    }
+    &__aboutUs {
+      background-color: $color-grey;
+      height: 300px;
+      @include responsive__768 {
+        height: 500px;
+        width: 46%;
+      }
+      &__line {
+        border-bottom: 2px solid $color-white;
+        margin: 70px 0 0 70px;
+        width: 50px;
+      }
+      &__text {
+        @include font-first-light;
+        font-size: calc($font-size-48 - 0.5rem);
+
+        margin: 70px 0 0 70px;
+        @include responsive__1024 {
+          font-size: $font-size-48;
+          margin: 140px 0 0 70px;
+        }
+      }
+    }
+  }
+  &__bottom {
+    text-align: center;
+    max-width: 900px;
+    margin: 200px auto;
+    padding: $margin-sides;
+    &__title {
+      @include font-first-bold($color: $color-black);
+      font-size: calc($font-size-48 - 0.5rem);
+    }
+    &__text {
+      margin-top: 30px;
+      @include font-second-light($color: $color-black);
+    }
+  }
+}

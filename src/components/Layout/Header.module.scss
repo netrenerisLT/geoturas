@@ -1,0 +1,140 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/mediaQ.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: $color-grey;
+}
+
+.nav-bar {
+  @include font-first-light;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  border-bottom: 1px solid $color-white;
+  margin: 0 auto;
+  z-index: 100;
+  width: 100%;
+  max-width: 1920px;
+  padding: $margin-sides;
+  @include responsive__375 {
+    font-size: $font-size-12;
+    flex-direction: column;
+  }
+  @include responsive__768 {
+    font-size: $font-size-16;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 200px;
+    margin: 20px;
+  }
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__list:nth-last-child(n + 2)::after {
+    content: "|";
+  }
+}
+
+.cover {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include responsive__1440 {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  &__first-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include responsive__768 {
+      text-align: left;
+    }
+    @include responsive__1440 {
+      max-width: 79%;
+    }
+  }
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+    @include responsive__768 {
+      flex-direction: row;
+      margin: 120px 0;
+    }
+  }
+  &__title {
+    @include font-first-bold;
+    font-size: calc($font-size-48 - 0.5rem);
+
+    padding: $margin-sides;
+    width: 100%;
+    margin-bottom: 40px;
+    @include responsive__768 {
+      font-size: $font-size-48;
+      margin-bottom: 0;
+    }
+  }
+  &__title-side {
+    @include font-second-light;
+    font-size: $font-size-16;
+    padding: $margin-sides;
+    @include responsive__768 {
+      text-align: right;
+    }
+    @include responsive__1440 {
+      padding: 0;
+    }
+  }
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -4px;
+    @include responsive__375 {
+      height: 400px;
+    }
+    @include responsive__768 {
+      height: 600px;
+    }
+    @include responsive__1440 {
+      height: 800px;
+    }
+  }
+  &__second-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: $margin-sides;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @include responsive__375 {
+      flex-direction: column;
+    }
+    @include responsive__768 {
+      flex-direction: row;
+    }
+    @include responsive__1440 {
+      margin: 0 30px 60px 30px;
+      flex-direction: column;
+      max-width: 250px;
+      text-align: center;
+    }
+  }
+  &__second-block-p {
+    @include font-second-light;
+    font-size: $font-size-16;
+    max-width: 235px;
+    text-align: center;
+  }
+}

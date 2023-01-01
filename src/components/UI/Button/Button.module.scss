@@ -1,0 +1,14 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mediaQ.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include font-second-bold;
+  text-transform: uppercase;
+  background-color: $color-blue;
+  cursor: pointer;
+  width: 250px;
+  height: 60px;
+}

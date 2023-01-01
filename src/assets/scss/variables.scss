@@ -1,0 +1,38 @@
+$color-light-grey: #f6f6f6;
+$color-grey: #423f3f;
+$color-blue: #009abd;
+$color-white: #ffffff;
+$color-black: #000000;
+$font-size-12: 12px;
+$font-size-16: 16px;
+$font-size-24: 24px;
+$font-size-48: 48px;
+$margin-sides: 0 40px;
+
+@mixin font-first-light($color: $color-white) {
+  font-family: "Orbitron", sans-serif;
+  font-style: medium;
+  font-weight: 400;
+  color: $color;
+  letter-spacing: 1px;
+}
+@mixin font-first-bold($color: $color-white) {
+  font-family: "Orbitron", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  color: $color;
+  letter-spacing: 2px;
+}
+
+@mixin font-second-light($color: $color-white) {
+  font-family: "Montserrat", sans-serif;
+  font-style: medium;
+  font-weight: 400;
+  color: $color;
+}
+@mixin font-second-bold($color: $color-white) {
+  font-family: "Montserrat", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  color: $color;
+}
