@@ -24,8 +24,8 @@ function EmailJs() {
         "service_lfi6bkx",
         "template_r4f42bn",
         form.current,
-        "QrLGkyOZSKq4t9-0x",
-        "g-recaptcha-response"
+        "QrLGkyOZSKq4t9-0x"
+        // "g-recaptcha-response"
       )
       .then(
         (result) => {
