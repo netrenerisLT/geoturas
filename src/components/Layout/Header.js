@@ -4,7 +4,7 @@ import scss from "./Header.module.scss";
 import logo from "../../assets/images/logo-white.png";
 import cover from "../../assets/images/cover.jpg";
 import Button from "../UI/Button/Button";
-import FB from "../../assets/images/facebook-2-48.ico";
+import FB from "../../assets/images/icon/facebook-2-24.png";
 
 const Header = (props) => {
   return (
@@ -55,6 +55,7 @@ const Header = (props) => {
               <a
                 href="https://www.facebook.com/profile.php?id=100063673564054"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={FB} alt="Facebook icon" />
               </a>
