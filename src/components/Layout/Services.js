@@ -27,7 +27,7 @@ function Services() {
       img: { icons: fav2, imgDesc: "Statybinė geodezija ikonėlė" },
     },
     {
-      heading: "Topografiniai planai ikonėlė",
+      heading: "Topografiniai planai",
       desc: `Topografiniai planai sudaromi prieš projektuojant naujus
       statinius, požemines inžinerines komunikacijas, kelius ar
       atliekant jų rekonstrukciją, rengiant detaliuosius planus ir pan.

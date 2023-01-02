@@ -6,10 +6,6 @@ import cover from "../../assets/images/cover.jpg";
 import Button from "../UI/Button/Button";
 
 const Header = (props) => {
-  // const scroll = useRef(null);
-  // const executeScroll = () =>
-  //   scroll.current.scrollIntoView({ behavior: "smooth" });
-
   return (
     <React.Fragment>
       <header className={scss.header}>
