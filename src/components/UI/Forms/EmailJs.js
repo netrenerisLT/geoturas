@@ -66,12 +66,26 @@ function EmailJs() {
             className={scss.block__form__email}
             required
           />
-          <div
+          {/* <div
             className="g-recaptcha"
             data-sitekey="6LdaRcUjAAAAACiaZwq__8OoErV1ItCYOYV8RmkD"
-          ></div>
-          <br />
-          <Button type="submit">Siųsti</Button>
+          ></div> */}
+          {/* <div
+            class="g-recaptcha"
+            data-sitekey="6LdaRcUjAAAAACiaZwq__8OoErV1ItCYOYV8RmkD"
+            data-callback="onSubmit"
+            data-size="invisible"
+          ></div> */}
+          {/* <br /> */}
+          <Button
+            className="g-recaptcha"
+            class="g-recaptcha"
+            data-sitekey="6LdaRcUjAAAAACiaZwq__8OoErV1ItCYOYV8RmkD"
+            data-callback="onSubmit"
+            type="submit"
+          >
+            Siųsti
+          </Button>
         </div>
       </form>
       {show && (
