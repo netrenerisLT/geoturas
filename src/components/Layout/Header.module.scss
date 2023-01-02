@@ -18,12 +18,13 @@
   z-index: 100;
   width: 100%;
   max-width: 1920px;
-  padding: $margin-sides;
+  padding: 0 15px;
   @include responsive__375 {
     font-size: $font-size-12;
     flex-direction: column;
   }
   @include responsive__768 {
+    padding: $margin-sides;
     font-size: $font-size-16;
     flex-direction: row;
     justify-content: space-between;
@@ -34,7 +35,7 @@
   }
   &__list {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
     & img {
       width: 24px;
