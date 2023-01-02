@@ -35,10 +35,17 @@
   &__list {
     display: flex;
     gap: 20px;
-    cursor: pointer;
+    align-items: center;
+    & img {
+      width: 24px;
+      width: 24px;
+    }
   }
   &__list:nth-last-child(n + 2)::after {
     content: "|";
+  }
+  & li {
+    cursor: pointer;
   }
 }
 

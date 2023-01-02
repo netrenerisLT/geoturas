@@ -4,6 +4,7 @@ import scss from "./Header.module.scss";
 import logo from "../../assets/images/logo-white.png";
 import cover from "../../assets/images/cover.jpg";
 import Button from "../UI/Button/Button";
+import FB from "../../assets/images/facebook-2-48.ico";
 
 const Header = (props) => {
   return (
@@ -51,6 +52,12 @@ const Header = (props) => {
                   Susisiekite
                 </Link>
               </li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100063673564054"
+                target="_blank"
+              >
+                <img src={FB} alt="Facebook icon" />
+              </a>
             </ul>
           </nav>
         </section>
