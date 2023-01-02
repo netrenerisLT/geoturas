@@ -25,7 +25,6 @@ function EmailJs() {
         "template_r4f42bn",
         form.current,
         "QrLGkyOZSKq4t9-0x"
-        // "g-recaptcha-response"
       )
       .then(
         (result) => {
@@ -66,10 +65,6 @@ function EmailJs() {
             className={scss.block__form__email}
             required
           />
-          {/* <div
-            className="g-recaptcha"
-            data-sitekey="6LdaRcUjAAAAACiaZwq__8OoErV1ItCYOYV8RmkD"
-          ></div> */}
           <Button type="submit">Siųsti</Button>
         </div>
       </form>
