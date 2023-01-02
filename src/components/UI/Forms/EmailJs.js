@@ -44,7 +44,7 @@ function EmailJs() {
   };
   return (
     <div className={scss.block__form}>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} id="contactForm">
         <textarea
           name="message"
           placeholder="Jūsų žinutė"
@@ -79,7 +79,6 @@ function EmailJs() {
           {/* <br /> */}
           <Button
             className="g-recaptcha"
-            class="g-recaptcha"
             data-sitekey="6LdaRcUjAAAAACiaZwq__8OoErV1ItCYOYV8RmkD"
             data-callback="onSubmit"
             type="submit"
