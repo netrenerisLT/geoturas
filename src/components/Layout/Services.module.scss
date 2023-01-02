@@ -32,6 +32,10 @@
       padding-top: 200px;
     }
     &__item {
+      & img {
+        width: 60px;
+        margin-bottom: 15px;
+      }
       &__title {
         @include font-second-bold($color: $color-black);
         max-width: 350px;

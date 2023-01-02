@@ -4,6 +4,10 @@ import ContactForm from "./components/Layout/ContactForm";
 import Footer from "./components/Layout/Footer";
 import Header from "./components/Layout/Header";
 import Services from "./components/Layout/Services";
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "G-KMQ31GBSQT"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   return (

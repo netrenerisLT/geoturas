@@ -1,10 +1,15 @@
 import React from "react";
+import { Link } from "react-scroll";
 import scss from "./Header.module.scss";
 import logo from "../../assets/images/logo-white.png";
 import cover from "../../assets/images/cover.jpg";
 import Button from "../UI/Button/Button";
 
 const Header = (props) => {
+  // const scroll = useRef(null);
+  // const executeScroll = () =>
+  //   scroll.current.scrollIntoView({ behavior: "smooth" });
+
   return (
     <React.Fragment>
       <header className={scss.header}>
@@ -15,19 +20,40 @@ const Header = (props) => {
           <nav>
             <ul className={scss["nav-bar__list"]}>
               <li className={scss["nav-bar__list"]}>
-                <a className={scss["nav-bar__link"]} href="index.html">
+                <Link
+                  className={scss["nav-bar__link"]}
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
+                >
                   Paslaugos
-                </a>
+                </Link>
               </li>
               <li className={scss["nav-bar__list"]}>
-                <a className={scss["nav-bar__link"]} href="index.html">
+                <Link
+                  className={scss["nav-bar__link"]}
+                  to="aboutus"
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
+                >
                   Apie Mus
-                </a>
+                </Link>
               </li>
               <li className={scss["nav-bar__list"]}>
-                <a className={scss["nav-bar__link"]} href="index.html">
-                  Kontaktai
-                </a>
+                <Link
+                  className={scss["nav-bar__link"]}
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
+                >
+                  Susisiekite
+                </Link>
               </li>
             </ul>
           </nav>
@@ -55,7 +81,16 @@ const Header = (props) => {
             <p className={scss["cover__second-block-p"]}>
               Susisiekite ir gaukite nuolaidą pirmam užsakymui!
             </p>
-            <Button type="submit">Susisiekti</Button>
+            <Link
+              className={scss["nav-bar__link"]}
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              <Button type="submit">Susisiekti</Button>
+            </Link>
           </div>
         </section>
       </header>

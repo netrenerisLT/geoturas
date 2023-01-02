@@ -25,7 +25,7 @@
       width: 50px;
     }
     &__text {
-      @include font-first-light;
+      @include font-first-bold;
       font-size: calc($font-size-48 - 0.5rem);
       margin: 70px 0 0 70px;
       @include responsive__1024 {

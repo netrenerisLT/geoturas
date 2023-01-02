@@ -1,7 +1,6 @@
 import React from "react";
 import scss from "./Footer.module.scss";
 import logo from "../../assets/images/logo-grey.png";
-import favicon from "../../assets/images/logo512.png";
 
 function Footer() {
   return (
@@ -21,25 +20,12 @@ function Footer() {
           </p>
         </div>
         <div className={scss.block__right}>
-          <div className={scss.block__right__top}>
-            <div className={scss.block__right__top__element}>
-              <img src={favicon} alt="ikonėlė" />
-              <p>Suteikiu Garantiją</p>
-            </div>
-            <div className={scss.block__right__top__element}>
-              <img src={favicon} alt="ikonėlė" />
-              <p>Suteikiu mokymus</p>
-            </div>
-            <div className={scss.block__right__top__element}>
-              <img src={favicon} alt="ikonėlė" />
-              <p>Suteikiu apsaugą</p>
-            </div>
-          </div>
           <div className={scss.block__right__bottom}>
             <div className={scss.block__right__bottom__left}>
               <h4>Rekvizitai</h4>
               <h5>Geoturas, IĮ</h5>
               <p>Įmonės kodas: 305218290</p>
+              {/* <p>Darbo laikas: I-V: 8.00-17.00</p> */}
             </div>
             <div className={scss.block__right__bottom__right}>
               <h4>Kontaktai</h4>

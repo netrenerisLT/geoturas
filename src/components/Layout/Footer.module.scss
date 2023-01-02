@@ -42,31 +42,6 @@
       width: 75%;
     }
 
-    &__top {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: $margin-sides;
-      gap: 20px;
-      background-color: $color-light-grey;
-      @include responsive__768 {
-        flex-direction: row;
-        gap: 100px;
-      }
-      & img {
-        display: inline;
-        max-width: 50px;
-        padding: 20px 0;
-        margin-right: 10px;
-      }
-      &__element {
-        @include font-first-bold($color-grey);
-        font-size: $font-size-16;
-        display: flex;
-        align-items: center;
-      }
-    }
     &__bottom {
       background-color: $color-grey;
       display: flex;
