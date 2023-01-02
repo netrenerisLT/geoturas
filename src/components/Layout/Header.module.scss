@@ -35,6 +35,7 @@
   &__list {
     display: flex;
     gap: 20px;
+    cursor: pointer;
   }
   &__list:nth-last-child(n + 2)::after {
     content: "|";

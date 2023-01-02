@@ -15,6 +15,7 @@ function EmailJs() {
   };
 
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
