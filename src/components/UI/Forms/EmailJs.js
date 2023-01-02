@@ -70,21 +70,7 @@ function EmailJs() {
             className="g-recaptcha"
             data-sitekey="6LdaRcUjAAAAACiaZwq__8OoErV1ItCYOYV8RmkD"
           ></div> */}
-          {/* <div
-            class="g-recaptcha"
-            data-sitekey="6LdaRcUjAAAAACiaZwq__8OoErV1ItCYOYV8RmkD"
-            data-callback="onSubmit"
-            data-size="invisible"
-          ></div> */}
-          {/* <br /> */}
-          <Button
-            className="g-recaptcha"
-            data-sitekey="6LdaRcUjAAAAACiaZwq__8OoErV1ItCYOYV8RmkD"
-            data-callback="onSubmit"
-            type="submit"
-          >
-            Siųsti
-          </Button>
+          <Button type="submit">Siųsti</Button>
         </div>
       </form>
       {show && (
