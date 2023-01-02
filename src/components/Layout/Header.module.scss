@@ -18,7 +18,7 @@
   z-index: 100;
   width: 100%;
   max-width: 1920px;
-  padding: 0 15px;
+  padding: 0 10px;
   @include responsive__375 {
     font-size: $font-size-12;
     flex-direction: column;
@@ -37,6 +37,7 @@
     display: flex;
     gap: 15px;
     align-items: center;
+    flex-wrap: wrap;
     & img {
       width: 24px;
       width: 24px;
