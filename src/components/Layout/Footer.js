@@ -19,7 +19,12 @@ function Footer() {
             © {new Date().getFullYear()} Visos Teisės Saugomos
           </p>
           <p className={scss.block__left__text}>
-            Sprendimas: <span><a href="www.silvadev.com/lt">SilvaDev</a></span>
+            Sprendimas:
+            <span>
+              <a href="https://www.silvadev.com/lt" target="_blank">
+                SilvaDev
+              </a>
+            </span>
           </p>
         </div>
         <div className={scss.block__right}>
