@@ -20,9 +20,9 @@ function Footer() {
           </p>
           <p className={scss.block__left__text}>
             Sprendimas: 
-            <span>
+            <span className={scss.block__left__text_span}>
               <a href="https://www.silvadev.com/lt" target="_blank">
-                SilvaDev
+                   SilvaDev
               </a>
             </span>
           </p>
