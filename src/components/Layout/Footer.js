@@ -18,6 +18,9 @@ function Footer() {
           <p className={scss.block__left__text}>
             © {new Date().getFullYear()} Visos Teisės Saugomos
           </p>
+          <p className={scss.block__left__text}>
+            Sprendimas: <span><a href="www.silvadev.com/lt">SilvaDev</a></span>
+          </p>
         </div>
         <div className={scss.block__right}>
           <div className={scss.block__right__bottom}>
